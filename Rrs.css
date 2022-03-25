@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card-image {
+    grid-area: image;
+    background: url(https://cdn.dribbble.com/users/3020768/screenshots/17257090/media/08e1f8e42171330cfe1c0476e2e8714e.png?compress=1&resize=400x300&vertical=top);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text {
+    grid-area: text;
+}
+/* .card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+} */
+/* .card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+} */
+/* .card-text h1{
+    margin-top: 0px;
+    font-size: 28px;
+} */
+/* .card-stats .stat{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+} */
+/* .card-stats .type{
+    font-size: 11px;
+    font-weight: 300;
+  text-transform: uppercase;
+} */
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+h1 {
+    margin: 4rem;
+    font-size: 2rem; 
+    font-weight: bold; 
+     text-shadow: 2px 2px 2px grey;
+}
